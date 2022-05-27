@@ -49,7 +49,7 @@
       content="六角西餐廳 - 咬一口就無法忘懷的漢堡，七夕絕對無法錯過的好滋味，六角大漢堡。"
     />
     <script type="module" crossorigin src="/HexBurger/assets/main.bca4b93b.js"></script>
-    <link rel="stylesheet" href="/HexBurger/assets/main.0f7cdd2f.css">
+    <link rel="stylesheet" href="/HexBurger/assets/main.29c180ed.css">
   </head>
   <body>
     
@@ -142,18 +142,18 @@
     <div class="sectionOrder__inner"><img src="img/Map.png" alt="六角西餐廳位置"/>
       <form class="sectionOrder__form">
         <label for="name">姓名</label>
-        <input id="name" type="text" placeholder="請輸入您的姓名"/>
+        <input id="name" type="text" placeholder="請輸入您的姓名" required="required"/>
         <label for="phone">電話</label>
-        <input id="phone" type="tel" placeholder="請輸入您的電話號碼"/>
+        <input id="phone" type="tel" placeholder="請輸入您的電話號碼" required="required"/>
         <label for="email">電子信箱</label>
-        <input id="email" type="email" placeholder="請輸入您的電子信箱"/>
+        <input id="email" type="email" placeholder="請輸入您的電子信箱" required="required"/>
         <label for="personNumber">人數</label>
-        <input id="personNumber" type="number" placeholder="請輸入預約人數"/>
+        <input id="personNumber" type="number" placeholder="請輸入預約人數" required="required"/>
         <input class="sectionOrderForm__vegCheckbox" id="veg" type="checkbox"/>
-        <label class="sectionOrderForm__veg" for="veg"> </label>
+        <label class="sectionOrderForm__veg" for="veg" required="required"> </label>
         <div class="btnGroup">
           <button class="btn btn--cancel">取消</button>
-          <button class="btn btn--cta">送出</button>
+          <input class="btn btn--cta" type="submit" value="送出"/>
         </div>
       </form>
     </div>
