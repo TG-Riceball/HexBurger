@@ -22,10 +22,10 @@
   <div class="container navbarMain__inner"><a class="navbarMain__logo" href="/">
       <h2>六角西餐廳</h2></a>
     <ul class="navbarMain__list" :class="{ 'navbarMain--active' : opened }">
-      <li class="navbarMain__item"><a class="navbarMain__link" href="/">首頁</a></li>
-      <li class="navbarMain__item"><a class="navbarMain__link" href="/store">商城</a></li>
-      <li class="navbarMain__item"><a class="navbarMain__link" href="/login">登入</a></li>
-      <li class="navbarMain__item"><a class="navbarMain__link" href="/register">註冊</a></li>
+      <li class="navbarMain__item"><a class="navbarMain__link" href="HexBurger/">首頁</a></li>
+      <li class="navbarMain__item"><a class="navbarMain__link" href="HexBurger/store">商城</a></li>
+      <li class="navbarMain__item"><a class="navbarMain__link" href="HexBurger/login">登入</a></li>
+      <li class="navbarMain__item"><a class="navbarMain__link" href="HexBurger/register">註冊</a></li>
     </ul>
     <button class="btnHamburger btn" @click="opened = !opened">
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" width="24">
@@ -53,15 +53,15 @@
       <h2 class="sectionAbout__heading sectionHeading">客人總是在詢問<br>「這麼好吃的秘訣是什麼？」</h2>
     </div>
     <ul class="aboutCardWrapper">
-      <li class="aboutCard"><img class="aboutCard__img" width="200" height="200" src="/img/feature_1.png" alt="蔬果擺放在桌上"/>
+      <li class="aboutCard"><img class="aboutCard__img" width="200" height="200" src="img/feature_1.png" alt="蔬果擺放在桌上"/>
         <h3 class="aboutCard__heading">台灣本土蔬菜</h3>
         <p class="aboutCard__paragraph">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
       </li>
-      <li class="aboutCard"><img class="aboutCard__img" width="200" height="200" src="/img/feature_2.png" alt="蔬果擺放在桌上"/>
+      <li class="aboutCard"><img class="aboutCard__img" width="200" height="200" src="img/feature_2.png" alt="蔬果擺放在桌上"/>
         <h3 class="aboutCard__heading">台灣本土蔬菜</h3>
         <p class="aboutCard__paragraph">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
       </li>
-      <li class="aboutCard"><img class="aboutCard__img" width="200" height="200" src="/img/feature_3.png" alt="蔬果擺放在桌上"/>
+      <li class="aboutCard"><img class="aboutCard__img" width="200" height="200" src="img/feature_3.png" alt="蔬果擺放在桌上"/>
         <h3 class="aboutCard__heading">台灣本土蔬菜</h3>
         <p class="aboutCard__paragraph">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
       </li>
@@ -70,7 +70,7 @@
 </section>
     
 <section class="sectionChef">
-  <div class="sectionChef__inner"><img class="sectionChef__img" width="470" height="460" src="/img/main_chef_brown.png" alt="主廚圖片"/>
+  <div class="sectionChef__inner"><img class="sectionChef__img" width="470" height="460" src="img/main_chef_brown.png" alt="主廚圖片"/>
     <div class="sectionChef__description">
       <h2 class="sectionChef__heading">今日主廚：帕金森、梅在帕<br/><span class="sectionChefHeading__subtitle">Tody Chef: Plum in Shock</span></h2>
       <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
@@ -82,17 +82,17 @@
   <div class="container">
     <h2 class="sectionHeading">聽聽別人的感想</h2>
     <ul class="feedbackCardWrapper"> 
-      <li class="feedbackCard"><img class="feedbackCard__img" width="67" height="67" src="/img/avatar_1.png" alt="產品經理人像照片"/>
+      <li class="feedbackCard"><img class="feedbackCard__img" width="67" height="67" src="img/avatar_1.png" alt="產品經理人像照片"/>
         <h3 class="feedbackCard__heading">高雄一口吃</h3>
         <p class="feedbackCard__paragraph">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
         <p class="feedbackCard__cite"> -- 產品經理</p>
       </li>
-      <li class="feedbackCard"><img class="feedbackCard__img" width="67" height="67" src="/img/avatar_2.png" alt="金身道士人像照片"/>
+      <li class="feedbackCard"><img class="feedbackCard__img" width="67" height="67" src="img/avatar_2.png" alt="金身道士人像照片"/>
         <h3 class="feedbackCard__heading">高雄一口吃</h3>
         <p class="feedbackCard__paragraph">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
         <p class="feedbackCard__cite">  -- 金身道士</p>
       </li>
-      <li class="feedbackCard"><img class="feedbackCard__img" width="67" height="67" src="/img/avatar_3.png" alt="美麗萬分照片"/>
+      <li class="feedbackCard"><img class="feedbackCard__img" width="67" height="67" src="img/avatar_3.png" alt="美麗萬分照片"/>
         <h3 class="feedbackCard__heading">高雄一口吃</h3>
         <p class="feedbackCard__paragraph">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
         <p class="feedbackCard__cite"> -- 美麗萬分</p>
