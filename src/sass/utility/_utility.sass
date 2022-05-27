@@ -1,0 +1,24 @@
+@mixin sm
+  @media(min-width:640px)
+    @content
+
+@mixin md
+  @media(min-width:768px)
+    @content
+
+@mixin lg
+  @media(min-width:1024px)
+    @content
+
+@mixin xl
+  @media(min-width:1280px)
+    @content
+
+.container
+    max-width: 940px
+    margin: 0 auto
+    padding: 0 1rem
+    
+.sectionHeading
+    text-align: center
+    margin-bottom: 2rem

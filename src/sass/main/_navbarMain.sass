@@ -1,0 +1,62 @@
+.navbarMain
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 100
+    background-color: var(--navbarBg)
+    color: white
+    transition: background-color .3s
+
+.navbarMain__inner
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 4rem
+
+.navbarMain__logo
+    margin: 1rem 0
+    display: inline-block
+    font-weight: 800
+    color: inherit
+    white-space: nowrap
+
+.navbarMain__list
+    position: absolute
+    top: 100%
+    left: 0
+    display: none
+    width: 100%
+
+    +md
+        width: unset
+        top: unset
+        position: unset
+        display: inline-block
+        background-color: transparent
+        
+
+.navbarMain__item
+    display: block
+    padding: 2rem 1rem
+
+    +md
+        display: inline-block        
+        padding: 0 1rem
+
+.navbarMain__link
+    color: inherit
+    +md
+        display: inline-block
+
+.btnHamburger
+    color: inherit
+    border: none
+    background: none
+    +md
+        display: none
+
+.navbarMain--active
+    background-color: var(--navbarBg--active)
+    display: block

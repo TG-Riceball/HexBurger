@@ -1,0 +1,59 @@
+.sectionAbout
+    padding: 3.1rem 0
+    background-color: var(--primary-light)
+
+.sectionAbout__headingWrapper
+    display: flex
+
+.sectionAbout__heading
+    position: relative
+    display: inline-block
+    margin-left: auto
+    margin-right: auto
+    --decolineWidth: 0px
+    --decolineGap: 1rem
+    --decolineHeight: 1px
+
+    +md
+        --decolineWidth: 100px
+
+    &::before
+        content: ''
+        position: absolute
+        top: 50%
+        left: calc(var(--decolineWidth) * -1 - var(--decolineGap))
+        transform: translate(0%,-50%)
+        width: var(--decolineWidth)
+        height: var(--decolineHeight)
+        background-color: var(--primary)
+
+    &::after
+        content: ''
+        position: absolute
+        top: 50%
+        right: calc(var(--decolineWidth) * -1 - var(--decolineGap))
+        transform: translate(0%,-50%)
+        width: var(--decolineWidth)
+        height: var(--decolineHeight)
+        background-color: var(--primary)
+
+    
+.aboutCardWrapper
+    display: flex
+    flex-direction: column
+    gap: 3.5rem
+    +md
+        flex-direction: row
+
+.aboutCard__img
+    border-radius: 50%
+    margin: 0 auto
+
+
+.aboutCard__heading
+    text-align: center
+    line-height: 3.5
+
+.aboutCard__paragraph
+    max-width: 60ch
+    margin: 0 auto

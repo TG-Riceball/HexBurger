@@ -1,0 +1,37 @@
+.sectionOrder
+    padding: 2rem 0
+    background-color: var(--primary-lighter)
+
+.sectionOrder__inner
+    display: flex
+    flex-direction: column
+    +md
+        flex-direction: row
+
+.sectionOrder__form
+    display: flex
+    flex-direction: column
+    width: 100%
+    margin-left: 0
+
+    +md
+        margin-left: 1rem
+
+.sectionOrderForm__veg
+    border: 1px solid var(--primary)
+    text-align: center
+    padding: .5rem
+    cursor: pointer
+    border-radius: 5px
+    &::before
+        content: '不用幫我特別準備素食'
+
+.sectionOrderForm__vegCheckbox
+    display: none
+
+    &:checked ~ label
+        //當checkbox被選取時，改變label顏色
+        background-color: var(--primary)
+        color: white
+        &::before
+            content: '需要幫我準備素食'

@@ -1,0 +1,36 @@
+.sectionLogin
+    background-color: var(--primary-light)
+    padding: 3.1rem 0
+    
+.forgetPassword
+    color: var(--accent)
+
+.loginForm
+    padding: 1rem
+    border-top: 3px solid var(--accent)
+    max-width: 300px
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    box-shadow: 3px 3px 4px hsla(0, 0%, 0%, .16)
+
+.sectionRegister
+    background-color: var(--primary-light)
+    padding: 3.1rem 0
+
+.registerForm
+    display: flex
+    padding: 1rem
+    border-top: 3px solid var(--accent)
+    max-width: 620px
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    box-shadow: 3px 3px 4px hsla(0, 0%, 0%, .16)
+
+.registerForm__inner
+    display: grid
+    grid-template-columns: repeat(1, minmax(0, 1fr))
+    gap: 1.25rem
+    +md
+        grid-template-columns: repeat(2, minmax(0, 2fr))

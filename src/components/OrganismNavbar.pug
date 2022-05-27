@@ -1,0 +1,17 @@
+nav.navbarMain(x-data="{ scrolled: false, opened: false }" @scroll.window="scrolled = (window.pageYOffset > 20) ? true : false" :class="{ 'navbarMain--active' : scrolled }" )
+    .container.navbarMain__inner
+        a(href="/").navbarMain__logo
+            h2 六角西餐廳
+
+        ul.navbarMain__list(:class="{ 'navbarMain--active' : opened }")
+            li.navbarMain__item
+                a.navbarMain__link(href="/") 首頁
+            li.navbarMain__item
+                a.navbarMain__link(href="/store") 商城
+            li.navbarMain__item
+                a.navbarMain__link(href="/login") 登入
+            li.navbarMain__item
+                a.navbarMain__link(href="/register") 註冊
+        button.btnHamburger.btn(@click="opened = !opened")
+            svg(xmlns='http://www.w3.org/2000/svg' fill="currentColor" height='24' width='24')
+                path(d='M3 18V16H21V18ZM3 13V11H21V13ZM3 8V6H21V8Z')

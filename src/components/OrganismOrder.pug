@@ -1,0 +1,27 @@
+section.sectionOrder
+    .container
+        h2.sectionHeading 我們的位置不太夠坐<br>要不要先定位呢？
+
+        .sectionOrder__inner
+            img(src="img/Map.png", alt="六角西餐廳位置")
+
+            form.sectionOrder__form
+                label(for="name") 姓名
+                input(id="name" type="text" placeholder="請輸入您的姓名")
+
+                label(for="phone") 電話
+                input(id="phone" type="tel" placeholder="請輸入您的電話號碼")
+
+                label(for="email") 電子信箱
+                input(id="email" type="email" placeholder="請輸入您的電子信箱")
+
+                label(for="personNumber") 人數
+                input(id="personNumber" type="number" placeholder="請輸入預約人數")
+
+                input.sectionOrderForm__vegCheckbox(id="veg" type="checkbox")
+                label.sectionOrderForm__veg(for="veg") 
+
+
+                div.btnGroup
+                    button.btn.btn--cancel 取消
+                    button.btn.btn--cta 送出

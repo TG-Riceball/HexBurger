@@ -1,0 +1,158 @@
+.store
+    padding-top: 3rem
+    padding-bottom: 3rem
+    display: grid
+    gap: 1.25rem
+    +md
+        grid-template-columns: 220px 1fr 
+
+.store__heading
+    margin-bottom: 1rem
+    display: flex
+    align-items: center
+
+.store__inner
+
+.store__toolbar
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 1.6rem
+    flex-direction: column
+    +sm
+        flex-direction: row
+
+.searchbar
+    display: flex
+    align-items: center
+    border: 1px solid var(--primary)
+    width: 100%
+    border-radius: 5px
+    height: 2rem
+    +md
+        max-width: 460px
+
+.searchbar__input
+    margin: 0
+    border: none
+    height: 100%
+
+.searchbar__btn
+    height: 100%
+    padding: 0 .5rem
+    display: inline-block
+    border-top-left-radius: unset
+    border-bottom-left-radius: unset
+
+    &:active
+        transform: unset
+
+.checkout
+    display: flex
+    align-items: center
+    white-space: nowrap
+    margin-left: auto
+    margin-top: 1.5rem
+    padding-left: 1rem
+    +sm
+        margin-top: unset
+        margin-left: unset
+
+.checkout__btn
+    position: relative
+
+.checkout__number
+    position: absolute
+    font-size: .8rem
+    color: white
+    top: -50%
+    right: -50%
+    transform: translate(-50%, 25%)
+    background: var(--accent)
+    width: 16px
+    height: 16px
+    border-radius: 50%
+    border: 1px solid white
+
+.checkout__divider
+    display: inline-block
+    height: 2ch
+    width: 1px
+    background-color: var(--primary)
+    margin: 0 .5rem
+
+.store__list
+
+.store__item
+
+.store__link
+    color: var(--primary)
+    border-bottom: 1px solid var(--primary)
+    padding: .5rem 0
+    display: block
+    transition: background-color .3s
+    &:hover
+        background-color: var(--primary)
+        color: white
+
+.store__gallery
+    display: grid
+    gap: 1.25rem
+    +md
+        grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) )
+
+.storeCard
+    border-radius: 5px
+    overflow: hidden
+    position: relative
+    box-shadow: 3px 3px 4px hsla(0, 0%, 0%, .16)
+    max-width: 300px
+    margin: 0 auto
+    text-align: center
+
+
+.storeCard__heart
+    font-size: 1.5rem
+    position: absolute
+    top: .5rem
+    left: .5rem
+    z-index: 1
+    color: white
+
+.storeCard__img
+    object-fit: cover
+    width: 100%
+
+.storeCard__content
+    margin: .5rem
+
+.storeCard__title
+    color: var(--primary)
+    margin: .5rem 0
+    margin-bottom: 1.5rem
+    font-size: 1.5rem
+
+    &::after
+        content: ''
+        display: block
+        margin: 0 auto
+        width: 50%
+        height: 1px
+        background-color: var(--primary)
+
+.storeCard__price
+    margin-bottom: 1rem
+    font-weight: 800
+    
+.storeCard__subtitle
+    font-size: .8rem
+    line-height: 1
+    margin-bottom: 1rem
+
+.storeCard__btn
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 1rem
+
+

@@ -1,0 +1,49 @@
+*, *::before, *::after
+    box-sizing: border-box
+
+html
+    font-family: -apple-system,BlinkMacSystemFont,"Microsoft JhengHei UI","Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+    color: var(--primary)
+    line-height: 1.65
+
+h1,h2,h3,h4,h5,h6,p
+    margin: 0
+
+h1
+    line-height: 1.2
+
+h2
+    line-height: 1.4
+
+img
+    object-fit: cover
+    display: block
+    max-width: 100%
+
+ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+a
+    text-decoration: none
+
+label
+    margin: .35rem 0
+    display: block
+
+input
+    border: 1px solid #4A4A4A
+    border-radius: 5px
+    padding: .5rem
+    margin-bottom: .75rem
+    opacity: .6
+    display: block
+    width: 100%
+    outline: none
+    transition: opacity .3s, backgorund-color .3s
+    
+
+    &:focus
+        background-color: var(--primary-light)
+        opacity: 1

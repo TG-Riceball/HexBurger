@@ -1,0 +1,55 @@
+.btn
+    cursor: pointer
+    background: transparent
+    border: none
+    border: 1px solid transparent
+    display: inline-block
+    border-radius: 5px
+    text-align: center
+    transition: transform .3s, background-color .3s, opacity .3s
+
+    &:active
+        transform: scale(.85)
+
+    &:hover
+        opacity: .6
+
+// Layout
+.btn--block
+    display: block
+    width: 100%
+
+// Appearence
+.btn--cancel
+    background-color: hsla(0, 0%, 0%, .35)
+    color: white
+    padding: .5rem 1.5rem
+
+.btn--primary
+    background-color: var(--primary)
+    color: white 
+    padding: .5rem 1.5rem
+
+.btn--cta
+    background-color: var(--accent)
+    color: white
+    padding: .5rem 1.5rem
+    &:focus, &:hover
+        background: var(--accent)
+        color: white
+
+    &:focus
+        opacity: .95
+
+.btnGroup
+    margin-top: 1rem
+    display: flex
+    width: 100%
+    gap: .6rem
+
+.btn--ghost
+    background-color: transparent
+    color: var(--accent)
+    border-color: var(--accent)
+
+
